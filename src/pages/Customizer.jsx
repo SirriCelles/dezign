@@ -53,7 +53,7 @@ const Customizer = () => {
       // call API to generate an AI image
       setGeneratingImg(true);
 
-      const response = await fetch(config.production, {
+      const response = await fetch(config.production.backendUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt })
