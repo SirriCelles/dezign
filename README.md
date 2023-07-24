@@ -1,5 +1,7 @@
 # Project Name
-> AI DEZIGN
+> DEZIGN
+> <img width="1680" alt="Screen Shot 2023-07-24 at 2 21 22 AM" src="https://github.com/SirriCelles/dezign/assets/42035795/091a928b-718b-4519-beda-d335c8bcee2f">
+
 
 ## Live Demo [DEZIGN](https://ai-dezigns.netlify.app)
 
@@ -14,9 +16,9 @@
 - Three.js
 - Framer Motion
 - OpenAI
+- Express.js
 
-# Getting Started with Create React App
-# React + Vite
+# Getting Started with React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
