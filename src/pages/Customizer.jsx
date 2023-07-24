@@ -10,6 +10,7 @@ import { EditorTabs, FilterTabs, DecalTypes} from '../config/constants';
 import  { fadeAnimation, slideAnimation } from '../config/motion';
 
 import { AIPicker, FilePicker, ColorPicker, Tab, CustomButton } from "../components";
+import config from "../config/config";
 
 const Customizer = () => {
   const snap = useSnapshot(state);
@@ -53,7 +54,7 @@ const Customizer = () => {
       // call API to generate an AI image
       setGeneratingImg(true);
 
-      const response = await fetch('http://localhost:8080/api/v1/dalle', {
+      const response = await fetch(config.production, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt })
